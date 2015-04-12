@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting System</title>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<div id="output"></div>
+	<div>
+		<p>
+			<input value="Clear sessionStorage" type="button" onClick="sessionStorage.clear();location.reload(true);" />
+			<input value="Clear localStorage" type="button" onClick="localStorage.clear();location.reload(true);" />
+			<input value="Clear all storages" type="button" onClick="sessionStorage.clear();localStorage.clear();location.reload(true);" />
+        	<input value="Reload Page" type="button" onClick="location.reload(true);" />
+    	</p>
+	</div>
+	<script src="scripts/greetingSystem.js"></script>
+</body>
+</html>

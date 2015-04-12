@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Poll</title>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<div>
+		<p>
+			<label for="softUniHw">Is this a homework for SoftUni JS Apps course?</label>
+			<select id="softUniHw">
+				<option value="1">Don't know</option>
+				<option value="2">No</option>
+				<option value="3">What is SoftUni</option>
+				<option value="4">Yes</option>
+			</select>
+		</p>
+		<p>
+			<label for="whereIsSoftUni">Where is SoftUni Mains situated?</label>
+			<select id="whereIsSoftUni">
+				<option value="1">London</option>
+				<option value="2">Los Angeles</option>
+				<option value="3">Sofia</option>
+				<option value="4">Pernik</option>
+			</select>
+		</p>
+		<!-- <p>
+			<label for="doYouStudyInSoftUni">Do you study in SoftUni?</label>
+			<select name="softUni" id="doYouStudyInSoftUni">
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+				<option value="3">Will apply</option>
+				<option value="4">Has graduated</option>
+			</select>
+		</p> -->
+		<p><input type="submit" value="Submit" onclick="checkRightAsnwers()">
+		<input value="Clear localStorage" type="button" onClick="localStorage.clear();" /></p>
+		<p id='mark'></p>
+		<script src="scripts/poll.js"></script>
+	</div>
+</body>
+</html>
